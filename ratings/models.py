@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 from django.db import models
 from django.contrib.auth.models import User # Assuming you use Django's auth system
-from store.models import Product # Import your Product model
+from product.models import Product # Import your Product model
 
 
 class Rating(models.Model):

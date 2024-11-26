@@ -1,6 +1,6 @@
 from rest_framework import serializers
 from .models import Rating
-from store.serializers import ProductSerializer #Import ProductSerializer
+from product.serializers import ProductSerializer #Import ProductSerializer
 
 class RatingSerializer(serializers.ModelSerializer):
     product = ProductSerializer() #Nested serializer to include product details
