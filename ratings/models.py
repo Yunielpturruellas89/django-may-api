@@ -15,6 +15,9 @@ class Rating(models.Model):
 
     class Meta:
       unique_together = [['user', 'product']] # prevent a single user from rating the same product twice
-
+      db_table = 'rating'
+      
     def __str__(self):
         return f"{self.user} rated {self.product} {self.rating} stars"
+
+        
